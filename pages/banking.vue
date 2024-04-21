@@ -2,10 +2,27 @@
   <main class="container-fluid p-0">
     <div class="px-6 px-lg-7 pt-8 border-bottom">
       <div class="d-flex align-items-center">
-        <h1>Документы</h1>
+        <h1>Банковский сектор</h1>
         <div class="hstack gap-2 ms-auto">
-          <button type="button" class="btn btn-sm btn-neutral d-none d-lg-inline-flex"><i class="bi bi-arrow-90deg-right me-2"></i> Отправить</button> <a href="/pages/page-details.html" class="btn btn-sm btn-primary"><i class="bi bi-plus-lg me-2"></i> Создать</a></div>
+          <button type="button" class="btn btn-sm btn-neutral d-none d-lg-inline-flex"><i class="bi bi-arrow-90deg-right me-2"></i> Отправить</button> <a href="#" class="btn btn-sm btn-primary"><i class="bi bi-plus-lg me-2"></i> Создать</a></div>
       </div>
+
+      <!-- ДАРМЕН ВОТ ПОИСК -->
+
+      <div class="row align-items-center mt-2">
+        <div class="col">
+          <input type="text" class="form-control h-75" placeholder="Поиск...">
+        </div>
+        <div class="col-auto">
+          <button type="button" class="btn d-inline-flex btn-sm btn-dark">
+            <p style="color: white; margin: 0;">Поиск</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- ДАРМЕН ПОИСК ЗАКОНЧИЛСЯ-->
+      <!-- p.s. УЧИ BOOTSTRAP , HTML, CSS  -->
+
       <ul class="nav nav-tabs nav-tabs-flush gap-8 overflow-x border-0 mt-4">
         <li class="nav-item"><a href="#" class="nav-link active">Все</a></li>
         <li class="nav-item"><a href="#" class="nav-link">Избранное</a></li>

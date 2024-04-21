@@ -23,8 +23,9 @@
       </div>
       <div class="collapse navbar-collapse overflow-x-hidden" id="sidebarCollapse">
         <ul class="navbar-nav">
+
           <li class="nav-item my-1">
-            <nuxt-link exact no-prefetch active-class="active" class="nav-link d-flex align-items-center rounded-pill" to="/home" role="button" aria-expanded="true" aria-controls="sidebar-dashboards">
+            <nuxt-link exact no-prefetch active-class="active" class="nav-link d-flex align-items-center rounded-pill" to="/" role="button" aria-expanded="true" aria-controls="sidebar-dashboards">
               <i class="bi bi-house-fill"></i>
               <span>Главная</span>
               <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
@@ -32,16 +33,56 @@
           </li>
 
           <li class="nav-item my-1">
-            <nuxt-link exact no-prefetch active-class="active" class="nav-link d-flex align-items-center rounded-pill" to="/" role="button" aria-expanded="false" aria-controls="sidebar-pages"><i class="bi bi-bar-chart-fill"></i> <span>Документы</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
+            <nuxt-link exact no-prefetch active-class="active" class="nav-link d-flex align-items-center rounded-pill" to="#" role="button" aria-expanded="false" aria-controls="sidebar-pages">
+              <i class="bi bi-bar-chart-fill"></i>
+              <span>Банковский сектор</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
             </nuxt-link>
           </li>
-          <li class="nav-item my-1"><a class="nav-link d-flex align-items-center rounded-pill" href="#sidebar-account" role="button" aria-expanded="false" aria-controls="sidebar-account"><i class="bi bi-gear-fill"></i> <span>Аккаунт</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span></a>
 
+
+          <li class="nav-item my-1">
+            <nuxt-link exact no-prefetch actfive-class="active" class="nav-link d-flex align-items-center rounded-pill" to="#" role="button" aria-expanded="false" aria-controls="sidebar-pages">
+              <i class="bi bi-currency-dollar"></i>
+              <span>Страховой сектор</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
+            </nuxt-link>
+          </li>
+
+          <li class="nav-item my-1">
+            <nuxt-link exact no-prefetch active-class="active" class="nav-link d-flex align-items-center rounded-pill" to="#" role="button" aria-expanded="false" aria-controls="sidebar-pages">
+              <i class="bi bi-activity"></i>
+              <span>Рынок ценных бумаг</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
+            </nuxt-link>
+          </li>
+
+          <li class="nav-item my-1">
+            <nuxt-link exact no-prefetch active-class="active" class="nav-link d-flex align-items-center rounded-pill" to="#" role="button" aria-expanded="false" aria-controls="sidebar-pages">
+              <i class="bi bi-building"></i>
+              <span>Микрофинансовые орагнизации</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
+            </nuxt-link>
+          </li>
+
+          <li class="nav-item my-1">
+            <nuxt-link exact no-prefetch active-class="active" class="nav-link d-flex align-items-center rounded-pill" to="#" role="button" aria-expanded="false" aria-controls="sidebar-pages">
+              <i class="bi bi-bank"></i>
+              <span>Национальный банк РК</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
+            </nuxt-link>
+          </li>
+
+
+          <li class="nav-item my-1">
+            <nuxt-link exact no-prefetch active-class="active" class="nav-link d-flex align-items-center rounded-pill" to="/docs" role="button" aria-expanded="false" aria-controls="sidebar-pages"><i class="bi bi-file-text"></i> <span>Документы</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
+            </nuxt-link>
+          </li>
+
+          <li class="nav-item my-1">
+            <nuxt-link class="nav-link d-flex align-items-center rounded-pill" exact no-prefetch active-class="active" to="/profile" role="button" aria-expanded="false" aria-controls="sidebar-account"><i class="bi bi-gear-fill"></i> <span>Аккаунт</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span>
+            </nuxt-link>
           </li>
 
           <li class="nav-item my-1"><a class="nav-link d-flex align-items-center rounded-pill" href="#sidebar-other" role="button" aria-expanded="false" aria-controls="sidebar-other"><i class="bi bi-file-break-fill"></i> <span>Другое</span> <span class="badge badge-sm rounded-pill me-n2 bg-success-subtle text-success ms-auto"></span></a>
           </li>
         </ul>
+
         <hr class="navbar-divider my-5 opacity-70">
         <ul class="navbar-nav">
           <li><span class="nav-link text-xs fw-semibold text-uppercase text-muted ls-wide">Дополнительно</span></li>
@@ -62,3 +103,4 @@
 <script>
 
 </script>
+

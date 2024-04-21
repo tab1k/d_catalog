@@ -3,10 +3,19 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+
+    script: [
+      {
+        src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js',
+        integrity: '...',
+        crossorigin: 'anonymous'
+      }
+    ],
+
     titleTemplate: '%s - d_catalog',
     title: 'd_catalog',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
@@ -16,12 +25,26 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    router: {
+      middleware: ['authenticated'], // middleware для проверки авторизации
+      base: '/', // базовый путь для всех URL
+      extendRoutes(routes, resolve) {
+        // Добавляем маршрут для страницы входа
+        routes.push({
+          name: 'login',
+          path: '/login',
+          component: resolve(__dirname, 'pages/login.vue') // указываем путь к файлу login.vue
+        })
+      }
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/node_modules/bootstrap/dist/css/bootstrap.css',
     '@/node_modules/bootstrap/dist/css/bootstrap.min.css',
+
     '@/assets/css/bootstrap-icons.css',
     '@/assets/css/main.css',
     '@/assets/css/utility.css'
